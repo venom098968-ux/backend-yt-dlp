@@ -1,9 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "yt-dlp-backend/server.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/yt-dlp-backend/server.js" }
-  ]
+  "builds": [{ "src": "backend/server.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/backend/server.js" }]
 }
