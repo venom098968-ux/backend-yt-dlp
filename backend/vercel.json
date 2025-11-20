@@ -1,18 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
+    { "src": "yt-dlp-backend/server.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
-    }
-  ],
-  "env": {
-    "PORT": "3000"
-  }
+    { "src": "/(.*)", "dest": "/yt-dlp-backend/server.js" }
+  ]
 }
